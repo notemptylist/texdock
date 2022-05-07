@@ -1,6 +1,0 @@
-name: 'configure texlive'
-description: 'Install TexLive'
-
-runs:
-  using: 'docker'
-  image: 'Dockerfile'

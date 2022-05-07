@@ -1,8 +1,7 @@
 FROM debian
 
 RUN apt-get update
-#RUN apt-get install texlive wget -y --no-install-recommends
-#RUN tlmgr init-usertree
+RUN tlmgr init-usertree
 RUN apt-get install wget libwww-perl -y
 
 ENV INSTALL_DIR=/install-tl-20220322
