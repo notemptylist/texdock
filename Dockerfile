@@ -1,7 +1,7 @@
-FROM debian
+FROM alpine:latest
 
-RUN apt-get update
-RUN apt-get install wget libwww-perl -y
+RUN apk update
+RUN apk add wget perl-libwww
 
 ENV INSTALL_DIR=/install-tl-latest
 RUN wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
